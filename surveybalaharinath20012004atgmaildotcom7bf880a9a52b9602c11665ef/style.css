@@ -1,0 +1,212 @@
+.navcontainer{
+                            background-color: #d48aff9d;
+                            backdrop-filter: blur(10px);
+                            position: fixed;
+                            z-index: 100;
+                        }
+                        .mycard{
+                            background-color: rgba(255, 255, 255, 0.3);
+                            border-radius: 10px;
+                            backdrop-filter: blur(20px);
+                        }
+                        .submittoast,.signintoast{
+                            width: 300px;
+                            left: calc(50% - 150px);
+                            position: fixed;
+                            z-index: 100;
+                            background-color: rgba(255, 255, 255, 0.3);
+                            border-radius: 10px;
+                            backdrop-filter: blur(20px);
+                        }
+                        .mybtn{
+                            background-color: #8d1dceb4 !important;
+                            color: white;
+                            backdrop-filter: blur(100px);
+                        }
+                        .mybtn:hover{
+                            background-color: #8d1dce !important;
+                            color: white;
+                            backdrop-filter: blur(100px);
+                        }
+                        .myborder{
+                            border: 1px #8d1dce solid;
+                        }
+                        .form-check-input:checked{
+                            background-color: #8d1dce !important;
+                            border: 1px solid #8d1dce !important;
+                        }
+                        label{
+                            font-weight: bolder;
+                        }
+                        @media(min-width: 1200px) and (max-width: 2500px){
+                            body{
+                                display: flex;
+                                flex-direction: column;
+                                min-height: 100vh;
+                                font-family: "Raleway";
+                                background: url("../utilities/homebackground.jpg") fixed;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                position: relative;
+                                z-index: -1;
+                            }
+                            .title{
+                                font-size: 30px;
+                            }
+                            .logo{
+                                height: 35px;
+                                width: 35px;
+                            }
+                            .submittoast,.signintoast{
+                                bottom: 50px;
+                            }
+                            .mycontainer{
+                                top: 77px;
+                                position: absolute;
+                            }
+                        }
+                        @media (min-width: 992px) and (max-width: 1199.98px){
+                            body{
+                                display: flex;
+                                flex-direction: column;
+                                min-height: 100vh;
+                                font-family: "Raleway";
+                                background: url("../utilities/homebackground.jpg") fixed;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                position: relative;
+                                z-index: -1;
+                            }
+                            .title{
+                                font-size: 27px;
+                            }
+                            .logo{
+                                height: 27px;
+                                width: 27px;
+                            }
+                            .submittoast,.signintoast{
+                                bottom: 50px;
+                            }
+                            .mycontainer{
+                                top: 73px;
+                                position: absolute;
+                            }
+                        }
+                        @media (min-width: 768px) and (max-width: 991.98px){
+                            body{
+                                display: flex;
+                                flex-direction: column;
+                                min-height: 100vh;
+                                font-family: "Raleway";
+                                background: url("../utilities/homebackground.jpg") fixed;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                position: relative;
+                                z-index: -1;
+                            }
+                            .title{
+                                font-size: 25px;
+                            }
+                            .logo{
+                                height: 25px;
+                                width: 25px;
+                            }
+                            .submittoast,.signintoast{
+                                bottom: 50px;
+                            }
+                            .mycontainer{
+                                top: 70px;
+                                position: absolute;
+                            }
+                        }
+                        @media (min-width: 576px) and (max-width: 767.98px){
+                            body{
+                                display: flex;
+                                flex-direction: column;
+                                min-height: 100vh;
+                                font-family: "Raleway";
+                                background: url("../utilities/homebackground.jpg");
+                                background-size: cover;
+                            }
+                            .title{
+                                font-size: 25px;
+                            }
+                            .logo{
+                                height: 25px;
+                                width: 25px;
+                            }
+                            .submittoast,.signintoast{
+                                bottom: 100px;
+                            }
+                            .mycontainer{
+                                top: 70px;
+                                position: absolute;
+                            }
+                            i.bi.bi-trash-fill::before{
+                                font-size: 12px !important;
+                            }
+                        }
+                        @media (max-width: 575.98px){
+                            body{
+                                display: flex;
+                                flex-direction: column;
+                                min-height: 100vh;
+                                font-family: "Raleway";
+                                background: url("../utilities/homebackground.jpg");
+                                background-size: cover;
+                                background-position: center;
+                                position: relative;
+                                z-index: -1;
+                            }
+                            .title{
+                                font-size: 23px;
+                            }
+                            .logo{
+                                height: 23px;
+                                width: 23px;
+                            }
+                            .submittoast,.signintoast{
+                                bottom: 100px;
+                            }
+                            .mycontainer{
+                                top: 67px;
+                                position: absolute;
+                            }
+                            i.bi.bi-trash-fill::before{
+                                font-size: 12px !important;
+                            }
+                        }
+                        ::-webkit-scrollbar {
+                            width: 5px;
+                            height: 5px;
+                        }
+                        
+                        ::-webkit-scrollbar-thumb:hover {
+                            background: #8d1dce;
+                            border-radius: 5px;
+                            backdrop-filter: blur(10px);
+                        }
+                        
+                        ::-webkit-scrollbar-thumb {
+                            background-color: #8d1dceb4;
+                            border-radius: 5px;
+                            backdrop-filter: blur(10px);
+                        }
+                        
+                        ::-webkit-scrollbar-track {
+                            background-color: #f1f1f1;
+                            border-radius: 5px;
+                            backdrop-filter: blur(10px);
+                        }
+                        
+                        ::-webkit-scrollbar-thumb:active {
+                            background-color: #8d1dce;
+                            border-radius: 5px;
+                            backdrop-filter: blur(10px);
+                        }
+                        body,a,button,link{
+                            cursor: url(../utilities/cursor.png),auto !important;
+                        }

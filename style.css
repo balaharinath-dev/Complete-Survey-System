@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Raleway";
+    background: url("utilities/background.jpg") fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: -1;
+}
+#loginform,#signinform{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+#logintitle,#signintitle{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#titlenxt{
+    font-size: 24px;
+    font-weight: bolder;
+}
+#loginbtn,#signinbtn{
+    background-color: #8d1dceb4 !important;
+    color: white;
+    backdrop-filter: blur(100px);
+}
+#loginbtn:hover,#signinbtn:hover{
+    background-color: #8d1dce !important;
+    color: white;
+    backdrop-filter: blur(100px);
+}
+.input-group-relative{
+    position: relative;
+}
+.input-group-text{
+    position: absolute;
+    right: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: white;
+    height: 100%;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 100;
+}
+#loginpassword,#signinpassword,#resigninpassword{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.mytoast{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Raleway";
+        background: url("utilities/background.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: -1;
+    }
+}
+@media (max-width: 575.98px){
+    #logintitle,#signintitle{
+        font-size: 25px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Raleway";
+        background: url("utilities/background.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: -1;
+    }
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8d1dce;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8d1dceb4;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #8d1dce;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+body,a,button,link{
+    cursor: url(utilities/cursor.png),auto !important;
+}

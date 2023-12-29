@@ -1,0 +1,315 @@
+
+.navcontainer{
+    background-color: #d48aff9d;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 100;
+}
+.canvas{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    position: fixed;
+    overflow-y: hidden;
+}
+.canvaas:hover{
+    overflow-y: auto;
+}
+.canvassm{
+    position: fixed;
+    z-index: 100;
+}
+.canvassmcontent{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+}
+.list-group,.list-group-item{
+    font-size: 20px;
+    background-color: transparent;
+    border: 0;
+}
+.list-group-item.active{
+    background-color: transparent;
+    color: #8d1dce !important;
+    font-weight: bolder;
+}
+.list-group-item:hover{
+    background-color: transparent;
+    color: #8d1dce !important;
+    font-weight: bolder;
+}
+a{
+    text-decoration: none;
+}
+.mycard{
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+}
+.myborder{
+    border: 1px #8d1dce solid;
+}
+.number{
+    color: #8d1dce;
+    font-size: 60px;
+}
+.namer{
+    overflow-x: hidden;
+}
+.namer:hover{
+    overflow-x: auto;
+}
+label{
+    font-weight: bolder;
+}
+#surveyiddiv{
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+#surveyiddiv:hover{
+    overflow-x: auto;
+}
+.mytable{
+    width: 100%;
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td{
+    border: 1px solid #000000;
+    padding: 24px;
+    text-align: center;
+    white-space: nowrap;
+}
+@media(min-width: 1200px) and (max-width: 2500px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Raleway";
+        background: url("../utilities/homebackground.jpg") fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: -1;
+    }
+    th,td{
+        min-width: 200px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .logo{
+        height: 35px;
+        width: 35px;
+    }
+    .canvas{
+        width: 250px;
+        top: 77px !important;
+        height: calc(100vh - 93px);
+    }
+    .mycontainer{
+        top: 77px;
+        left: 258px;
+        position: absolute;
+        width: calc(100% - 258px);
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Raleway";
+        background: url("../utilities/homebackground.jpg") fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: -1;
+    }
+    th,td{
+        min-width: 200px;
+    }
+    .title{
+        font-size: 27px;
+    }
+    .logo{
+        height: 27px;
+        width: 27px;
+    }.canvas{
+        width: 250px;
+        top: 73px !important;
+        height: calc(100vh - 89px);
+    }
+    .mycontainer{
+        top: 73px;
+        left: 258px;
+        position: absolute;
+        width: calc(100% - 258px);
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Raleway";
+        background: url("../utilities/homebackground.jpg") fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: -1;
+    }
+    th,td{
+        min-width: 150px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .logo{
+        height: 25px;
+        width: 25px;
+    }.canvas{
+        width: 200px;
+        top: 70px !important;
+        height: calc(100vh - 86px);
+    }
+    .mycontainer{
+        top: 70px;
+        left: 208px;
+        position: absolute;
+        width: calc(100% - 208px);
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Raleway";
+        background: url("../utilities/homebackground.jpg");
+        background-size: cover;
+    }
+    th,td{
+        min-width: 100px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .logo{
+        height: 25px;
+        width: 25px;
+    }
+    .canvassm{
+        width: 100%;
+        bottom: 0px;
+    }
+    .mycontainer{
+        top: 70px;
+        position: absolute;
+        width: 100%;
+    }
+    .finalcont,.surveyfinalcont{
+        margin-bottom: 98px !important;
+    }
+    .bi{
+        font-size: 28px;
+    }
+    i.bi.bi-trash-fill::before{
+        font-size: 20px !important;
+    }
+    .accounter{
+        color: #8d1dce;
+        font-size: 28px;
+        font-weight: bolder;
+    }
+}
+@media (max-width: 575.98px){
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        font-family: "Raleway";
+        background: url("../utilities/homebackground.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: -1;
+        font-size: 13px;
+    }
+    th,td{
+        min-width: 100px;
+    }
+    .title{
+        font-size: 23px;
+    }
+    .logo{
+        height: 23px;
+        width: 23px;
+    }
+    .canvassm{
+        width: 100%;
+        bottom: 0px;
+    }
+    .mycontainer{
+        top: 67px;
+        position: absolute;
+        width: 100%;
+    }
+    .finalcont,.surveyfinalcont{
+        margin-bottom: 94px !important;
+    }
+    .bi{
+        font-size: 25px;
+    }
+    i.bi.bi-trash-fill::before{
+        font-size: 18px !important;
+    }
+    .accounter{
+        color: #8d1dce;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .smbtn{
+        font-size: 14px;
+        padding: 4px !important;
+    }
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8d1dce;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8d1dceb4;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #8d1dce;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+body,a,button,link{
+    cursor: url(../utilities/cursor.png),auto !important;
+}

@@ -1,0 +1,66 @@
+<?php
+require '../vendor/autoload.php';
+$mongoDBUrl="mongodb://localhost:27017";
+$databaseName="SurveyDB";
+$collectionName="SurveyCollection";
+$client=new MongoDB\Client($mongoDBUrl);
+$database=$client->selectDatabase($databaseName);
+$collection=$database->selectCollection($collectionName);
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $createdby=$_POST["createdbycookie"];
+    $uuid=$_POST["uuid"];
+    $questionArray=json_decode($_POST["qToSend"]);
+    $mainContent=$_POST["mainContent"];
+    $scriptContent=$_POST["scriptContent"];
+    $styleContent=$_POST["styleContent"];
+    $phpContent=$_POST["phpContent"];
+    $lastsurvey=$_POST["lastsurvey"];
+    $foldername="survey$uuid";
+    $folderpath="../".$foldername;
+    if(mkdir($folderpath)){
+        $formfilepath=$folderpath.'/'."form.php";
+        $stylefilepath=$folderpath.'/'."style.css";
+        $scriptfilepath=$folderpath.'/'."script.js";
+        $submitformfilepath=$folderpath.'/'."submitform.php";
+        $formfilehandler=fopen($formfilepath,'w');
+        $stylefilehandler=fopen($stylefilepath,'w');
+        $scriptfilehandler=fopen($scriptfilepath,'w');
+        $submitformfilehandler=fopen($submitformfilepath,'w');
+        fwrite($formfilehandler,$mainContent);
+        fwrite($stylefilehandler,$styleContent);
+        fwrite($scriptfilehandler,$scriptContent);
+        fwrite($submitformfilehandler,$phpContent);
+        fclose($formfilehandler);
+        fclose($stylefilehandler);
+        fclose($scriptfilehandler);
+        fclose($submitformfilehandler);
+        $createdbyInsert=[
+            'username'=>$createdby,
+        ];
+        $dataArrayToUpdate=[
+            '$inc'=>['surveyscreated'=>1],
+            '$set'=>['lastsurvey'=>$lastsurvey],
+        ];
+        $pushresult=$collection->updateOne($createdbyInsert,$dataArrayToUpdate);
+        date_default_timezone_set('Asia/Kolkata');
+        $timestamp=time();
+        if($pushresult->getModifiedCount()>0){
+            $dataToInsert=[
+                'createdby'=>$createdby,
+                'formId'=>$uuid,
+                'title'=>$lastsurvey,
+                'timestamp'=>date("Y-m-d H:i:s", $timestamp),
+                'questionArray'=>$questionArray,
+                'responses'=>[],
+            ];
+            $insertResult=$collection->insertOne($dataToInsert);
+            if($insertResult->getInsertedCount()>0){
+                echo "success";
+            } 
+            else{
+                echo "failed";
+            }
+        }
+    }
+}
+?>

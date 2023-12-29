@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "657d54e4b4813738ce0b15af"
+  },
+  "username": "balaharinath20012004@gmail.com",
+  "firstname": "Balaharinath",
+  "lastname": "C",
+  "profession": "Student",
+  "country": "India",
+  "password": "$2y$10$M9Q6fgRU8mA7SKXraQN6eenE6uZBbYWR7eQ1vZ6na5fjYDjoti52G",
+  "lastsurvey": "Smartphone Survey 2023",
+  "surveyscreated": 1,
+  "surveyssubmitted": 0
+},
+{
+  "_id": {
+    "$oid": "658c478f1b3e05a1260bb8e2"
+  },
+  "createdby": "balaharinath20012004@gmail.com",
+  "formId": "balaharinath20012004atgmaildotcom7bf880a9a52b9602c11665ef",
+  "title": "Smartphone Survey 2023",
+  "timestamp": "2023-12-27 21:19:35",
+  "questionArray": [
+    "What is your age group?",
+    "Which gender do you identify with?",
+    "How often do you use your smartphone in a day?",
+    "What operating system does your current smartphone use?",
+    "Do you have any additional comments or suggestions regarding smartphones that you would like to share?"
+  ],
+  "responses": [
+  ]
+}]
